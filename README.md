@@ -15,7 +15,7 @@ To install `open_food_trucks`, follow these steps:
 
 Linux and macOS:
 ```
-git clone 
+git clone https://github.com/Cache123/open_food_trucks.git
 cd open_food_trucks
 npm install
 ```
