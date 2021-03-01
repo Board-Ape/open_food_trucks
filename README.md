@@ -28,7 +28,8 @@ To use `open_food_trucks`, follow these steps:
 npm start
 ```
 
-If there are more than 10 open food trucks a prompt will appear
+If there are more than 10 open food trucks a prompt will appear.
+Please respond accordingly.
 
 ## Contributors
 
