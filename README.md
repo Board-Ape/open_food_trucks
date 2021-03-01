@@ -11,7 +11,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installing Open Food Trucks
 
-To install <open_food_trucks>, follow these steps:
+To install `open_food_trucks`, follow these steps:
 
 Linux and macOS:
 ```
@@ -22,7 +22,7 @@ npm install
 
 ## Using Open Food Trucks
 
-To use <open_food_trucks>, follow these steps:
+To use `open_food_trucks`, follow these steps:
 
 ```
 npm start
