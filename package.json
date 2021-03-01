@@ -1,0 +1,16 @@
+{
+  "name": "open_food_trucks",
+  "version": "1.0.0",
+  "description": "find open local food trucks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "cache123",
+  "license": "ISC",
+  "dependencies": {
+    "cli-table": "^0.3.5",
+    "node-fetch": "^2.6.1"
+  }
+}
