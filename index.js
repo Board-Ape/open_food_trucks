@@ -93,11 +93,11 @@ function printFoodTrucks(arr, displayCount) {
 };
 
 function filterFoodTrucks(arr) {
-    const hours = time.getHours() === 1 ? `0${time.getHours()}` : time.getHours();
-    const minutes = time.getMinutes() === 1 ? `0${time.getMinutes()}` : time.getMinutes();
+    const hours = time.getHours().toString().length === 1 ? `0${time.getHours()}` : `${time.getHours()}`;
+    const minutes = time.getMinutes().toString().length === 1 ? `0${time.getMinutes()}` : `${time.getMinutes()}`;
     const militaryTime = `${hours}:${minutes}`;
     
-    return arr.filter((truck) => {
+    return arr.filter(truck => {
         // open 24 hours 
         if (truck.start24 === truck.end24) return truck;
         // open through the night and current hours is a single digit
@@ -105,7 +105,7 @@ function filterFoodTrucks(arr) {
         // open through the night and current hours is two digits
         if (truck.start24 > truck.end24 && hours[0] !== '0' && truck.start24 < militaryTime) return truck;
         // open during the day
-        if (truck.start24 < truck.end24 && truck.start24 < militaryTime && truck.end24 > militaryTime) return truck;
+        if (truck.start24 < truck.end24 && truck.start24 <= militaryTime && truck.end24 > militaryTime) return truck;
     })
 };
 
